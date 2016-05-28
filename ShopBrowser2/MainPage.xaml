@@ -1,0 +1,896 @@
+﻿<Page
+    x:Class="ShopBrowser2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ShopBrowser2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="Home_Show" Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets\Theme3.png"></ImageBrush>
+        </Grid.Background>
+        <!--第一层-->
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+
+
+            <Grid x:Name="Home_Page" Visibility="Visible">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="1140"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <Grid Grid.Row="0" Grid.Column="0" >
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="2" >
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="1">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="42"></RowDefinition>
+                        <RowDefinition Height="260"></RowDefinition>
+
+                        <RowDefinition Height="30"></RowDefinition>
+
+                        <RowDefinition Height="42"></RowDefinition>
+                        <RowDefinition Height="260"></RowDefinition>
+
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="42"></RowDefinition>
+                        <RowDefinition Height="260"></RowDefinition>
+
+                        <RowDefinition Height="30"></RowDefinition>
+
+                        <RowDefinition Height="42"></RowDefinition>
+                        <RowDefinition Height="260"></RowDefinition>
+
+
+
+                    </Grid.RowDefinitions>
+
+                    <!--第一行热门浏览网站-->
+                    <Grid x:Name="row1" Grid.Row="0"  Grid.Column="0">
+                        <TextBlock Text="热门推荐" HorizontalAlignment="Left" VerticalAlignment="Center"  FontFamily="宋体" FontSize="16" Foreground="Red">
+                        </TextBlock>
+                    </Grid>
+
+                    <Grid x:Name="row2" Grid.Row="1"  Grid.Column="0">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Assets/HotTitle_bg.png"></ImageBrush>
+                        </Grid.Background>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Button Grid.Row="0" Grid.Column="0" x:Name="OFTENBTN_1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95"  Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot1.png" Stretch="UniformToFill"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="0" Grid.Column="1" x:Name="OFTENBTN_2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot2.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="0" Grid.Column="2" x:Name="OFTENBTN_3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot3.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="0" Grid.Column="3" x:Name="OFTENBTN_4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot4.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="0" Grid.Column="4" x:Name="OFTENBTN_5" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot5.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="0" Grid.Column="5" x:Name="OFTENBTN_6" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot6.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="1" Grid.Column="0" x:Name="OFTENBTN_7" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot7.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="1" Grid.Column="1" x:Name="OFTENBTN_8" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot8.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="1" Grid.Column="2" x:Name="OFTENBTN_9" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot9.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="1" Grid.Column="3" x:Name="OFTENBTN_10" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot10.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button Grid.Row="1" Grid.Column="4" x:Name="OFTENBTN_11" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot11.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button Grid.Row="1" Grid.Column="5" x:Name="OFTENBTN_12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150"  Height="95" Click="Often_Btn_Clicked" PointerEntered="Often_Btn_Hover" PointerExited="Often_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Hot12.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+
+                    </Grid>
+
+
+
+                    <!--第二行国内B2C网站-->
+                    <Grid x:Name="row3" Grid.Row="2" Grid.Column="1" Background="White">
+                    </Grid>
+
+                    <Grid x:Name="row4" Grid.Row="3"  Grid.Column="0" Background="#EBEBEB">
+                        <Image Source="Assets/one.png" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Center" Width="32" Height="31">
+                        </Image>
+                        <TextBlock Text="国内电商网站" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="62,0,100,0" FontFamily="宋体" FontSize="16">
+                        </TextBlock>
+                    </Grid>
+
+                    <Grid x:Name="row5" Grid.Row="4" Grid.Column="0" Background="White">
+                        <FlipView HorizontalAlignment="Left"  VerticalAlignment="Center"  Width="1140">
+
+                            <!--中间5页滚动按钮-->
+                            <Grid>
+                                <Grid Grid.Row="0" Grid.Column="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Button Grid.Row="0" Grid.Column="0" x:Name="B2CBTN_1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush  ImageSource="Assets/1.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+
+                                    <Button Grid.Row="0" Grid.Column="1" x:Name="B2CBTN_2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/2.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="2" x:Name="B2CBTN_3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/3.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="3" x:Name="B2CBTN_4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/4.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="4" x:Name="B2CBTN_5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/5.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                    <Button Grid.Row="0" Grid.Column="5" x:Name="B2CBTN_6" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/6.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="0" x:Name="B2CBTN_7" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/7.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="1" x:Name="B2CBTN_8" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/8.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="2" x:Name="B2CBTN_9" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/9.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="3" x:Name="B2CBTN_10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/10.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="4" x:Name="B2CBTN_11" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/11.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                    <Button Grid.Row="1" Grid.Column="5" x:Name="B2CBTN_12" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/12.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid>
+                                <Grid Grid.Row="0" Grid.Column="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Button Grid.Row="0" Grid.Column="0" x:Name="B2CBTN_13" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/13.png"></ImageBrush>
+                                        </Button.Background>
+                                        <Button.RenderTransform>
+                                            <ScaleTransform  ScaleX="1" ScaleY="1"/>
+                                        </Button.RenderTransform>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="1" x:Name="B2CBTN_14" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/14.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="2" x:Name="B2CBTN_15" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/15.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="3" x:Name="B2CBTN_16" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/16.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="4" x:Name="B2CBTN_17" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/17.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="5" x:Name="B2CBTN_18" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/18.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="0" x:Name="B2CBTN_19" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/19.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="1" x:Name="B2CBTN_20" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/20.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="2" x:Name="B2CBTN_21" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/21.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="3" x:Name="B2CBTN_22" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/22.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="4" x:Name="B2CBTN_23" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/23.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="5" x:Name="B2CBTN_24" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/24.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid>
+                                <Grid Grid.Row="0" Grid.Column="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Button Grid.Row="0" Grid.Column="0" x:Name="B2CBTN_25" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/25.png"></ImageBrush>
+                                        </Button.Background>
+                                        <Button.RenderTransform>
+                                            <ScaleTransform  ScaleX="1" ScaleY="1"/>
+                                        </Button.RenderTransform>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="1" x:Name="B2CBTN_26" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/26.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="2" x:Name="B2CBTN_27" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/27.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="3" x:Name="B2CBTN_28" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/28.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="4" x:Name="B2CBTN_29" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/29.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="0" Grid.Column="5" x:Name="B2CBTN_30" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/30.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="0" x:Name="B2CBTN_31" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150"  Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/31.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="1" x:Name="B2CBTN_32" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/32.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="2" x:Name="B2CBTN_33" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/33.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="3" x:Name="B2CBTN_34" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/34.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="4" x:Name="B2CBTN_35" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/35.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+
+                                    <Button Grid.Row="1" Grid.Column="5" x:Name="B2CBTN_36" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="B2C_Btn_Clicked" PointerEntered="B2C_Btn_Hover" PointerExited="B2C_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Assets/36.png"></ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                       
+                        </FlipView>
+                    </Grid>
+
+
+                    <!--第三行海淘网站-->
+                    <Grid x:Name="row6" Grid.Row="5"  Grid.Column="0" Background="White">
+                    </Grid>
+
+                    <Grid x:Name="row7" Grid.Row="6"  Grid.Column="0" Background="#EBEBEB">
+                        <Image Source="Assets/two.png" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Center" Width="32" Height="31">
+                        </Image>
+                        <TextBlock Text="海淘网站" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="62,0,100,0" FontFamily="宋体" FontSize="16">
+                        </TextBlock>
+                    </Grid>
+
+                    <Grid x:Name="row8" Grid.Row="7" Grid.Column="0" Background="White">
+                        <!--<FlipView HorizontalAlignment="Center" VerticalAlignment="Center">-->
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Grid.Row="0" Grid.Column="0" x:Name="HAITAOBTN_1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO1.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+
+                            <Button Grid.Row="0" Grid.Column="1" x:Name="HAITAOBTN_2" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO2.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="0" Grid.Column="2" x:Name="HAITAOBTN_3" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO3.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="0" Grid.Column="3" x:Name="HAITAOBTN_4" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO4.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="0" Grid.Column="4" x:Name="HAITAOBTN_5" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO5.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+                            <Button Grid.Row="0" Grid.Column="5" x:Name="HAITAOBTN_6" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO6.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="0" x:Name="HAITAOBTN_7" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO7.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="1" x:Name="HAITAOBTN_8" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO8.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="2" x:Name="HAITAOBTN_9" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO9.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="3" x:Name="HAITAOBTN_10" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO10.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="4" x:Name="HAITAOBTN_11" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO11.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+                            <Button Grid.Row="1" Grid.Column="5" x:Name="HAITAOBTN_12" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="HaiTao_Btn_Clicked" PointerEntered="HaiTao_Btn_Hover" PointerExited="HaiTao_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/HAITAO12.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+
+
+                        </Grid>
+
+                   
+                    </Grid>
+
+                    <!--第四行优惠券-->
+                    <Grid x:Name="row9" Grid.Row="8"  Grid.Column="0" Background="White">
+                    </Grid>
+
+                    <Grid x:Name="row10" Grid.Row="9"  Grid.Column="0" Background="#EBEBEB">
+                        <Image Source="Assets/three.png" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Center" Width="32" Height="31">
+                        </Image>
+                        <TextBlock Text="网购优惠券" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="62,5,100,0" FontFamily="宋体"   FontSize="16">
+                        </TextBlock>
+                    </Grid>
+
+                    <Grid x:Name="row11" Grid.Row="10" Grid.Column="0" Background="White">
+
+                        <!-- <FlipView VerticalAlignment="Center" HorizontalAlignment="Center">-->
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Grid.Row="0" Grid.Column="0" x:Name="YOUHUIQUANBTN_1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" >
+                                
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN1.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="0" Grid.Column="1" x:Name="YOUHUIQUANBTN_2" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" >
+                                
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN2.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="0" Grid.Column="2" x:Name="YOUHUIQUANBTN_3" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" >
+                                
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN3.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="0" Grid.Column="3" x:Name="YOUHUIQUANBTN_4" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN4.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="0" Grid.Column="4" x:Name="YOUHUIQUANBTN_5" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN5.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+                            <Button Grid.Row="0" Grid.Column="5" x:Name="YOUHUIQUANBTN_6" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN6.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="0" x:Name="YOUHUIQUANBTN_7" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN7.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="1" x:Name="YOUHUIQUANBTN_8" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN8.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="2" x:Name="YOUHUIQUANBTN_9" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN9.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="3" x:Name="YOUHUIQUANBTN_10" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN10.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+
+                            <Button Grid.Row="1" Grid.Column="4" x:Name="YOUHUIQUANBTN_11" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN11.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+                            <Button Grid.Row="1" Grid.Column="5" x:Name="YOUHUIQUANBTN_12" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="95" Width="150" Click="YouHuiQuan_Btn_Clicked" PointerEntered="YouHuiQuan_Btn_Hover" PointerExited="YouHuiQuan_Btn_Leave" Style="{StaticResource DateTimePickerFlyoutButtonStyle}" 
+>
+                                <Button.Background>
+                                    <ImageBrush ImageSource="Assets/YOUHUIQUAN12.png"></ImageBrush>
+                                </Button.Background>
+                            </Button>
+                        </Grid>
+                  
+                    </Grid>
+
+                </Grid>
+
+            </Grid>
+
+
+        </ScrollViewer>
+
+        <!--第二层-->
+        <Grid x:Name="Now_Page" Visibility="Collapsed" Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Gray">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid x:Name="B2CWebsite" Grid.Row="0" Grid.Column="0" Margin="2">
+                    <WebView  x:Name="CommonWebView" NewWindowRequested="CommonWebView_NewWindowRequested" NavigationStarting="CommonWebView_NavigationStarting" NavigationCompleted="CommonWebView_NavigationCompleted" Margin="2" ></WebView>
+
+                    <ProgressRing x:Name="CommonRing" IsActive="True" Visibility="Visible" Width="100" Height="100">
+                    </ProgressRing>
+
+                </Grid>
+
+
+                <Grid x:Name="CommonItem" Grid.Row="1" Grid.Column="0" Background="Black">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="20"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="Back" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Height="20" Margin="10,5,0,0" Click="ClickedToBack" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/Back.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button x:Name="twoScreen" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Height="21" Margin="90,5,0,0"  Click="ClickedTwoScreen" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/DoubleScreen.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button x:Name="ReFresh" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Height="22" Margin="170,5,0,0"  Click="ClickedReFresh" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/ReFresh.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <Button x:Name="HomePage" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Height="24" Margin="250,5,0,0"  Click="ClickedToHomePage" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="Assets/HomePage.png"></ImageBrush>
+                            </Button.Background>
+                        </Button>
+
+                        <TextBlock Grid.Row="1" Text="后退" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="10,3,0,0" Foreground="White"></TextBlock>
+                        <TextBlock Grid.Row="1" Text="双屏" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="90,3,0,0" Foreground="White"></TextBlock>
+                        <TextBlock Grid.Row="1" Text="刷新" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="170,3,0,0" Foreground="White"></TextBlock>
+                        <TextBlock Grid.Row="1" Text="首页" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="250,3,0,0" Foreground="White"></TextBlock>
+
+                    </Grid>
+
+                </Grid>
+
+            </Grid>
+        </Grid>
+
+        <!--第三层-->
+        <Grid x:Name="Collect_Page" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="row_1" Grid.Row="0"  Grid.Column="0" Background="#B9C9FE">
+                <TextBlock Text="我 的 收 藏" HorizontalAlignment="Center" VerticalAlignment="Center">
+                </TextBlock>
+            </Grid>
+
+            <Grid x:Name="row_2" Grid.Row="1" Grid.Column="0" Background="#E8EDFF">
+                <TextBlock Text="首页-天猫换新-viishow 旗舰店天猫Tmall.com  删除" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </Grid>
+
+        <!--第四层-->
+        <Grid x:Name="Double_Page" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="row1_0" Grid.Row="0"  Grid.Column="0" Background="#B9C9FE">
+                <Grid x:Name="LeftWebsite" Grid.Row="0" Grid.Column="0" Margin="2">
+                    <WebView  x:Name="LeftWebView" NewWindowRequested="CommonWebView_NewWindowRequested" NavigationStarting="CommonWebView_NavigationStarting2" NavigationCompleted="CommonWebView_NavigationCompleted2" Margin="2" ></WebView>
+                    <ProgressRing x:Name="LeftRing" IsActive="True" Visibility="Visible" Width="100" Height="100">
+                    </ProgressRing>
+                </Grid>
+            </Grid>
+
+            <Grid x:Name="row1_1" Grid.Row="0" Grid.Column="1" Background="#B9C9FE">
+                <Grid x:Name="RightWebsite" Grid.Row="0" Grid.Column="0" Margin="2">
+                    <WebView  x:Name="RightWebView" NewWindowRequested="CommonWebView_NewWindowRequested" NavigationStarting="CommonWebView_NavigationStarting3" NavigationCompleted="CommonWebView_NavigationCompleted3" Margin="2" ></WebView>
+                    <ProgressRing x:Name="RightRing" IsActive="True" Visibility="Visible" Width="100" Height="100">
+                    </ProgressRing>
+                </Grid>
+            </Grid>
+
+            <Grid x:Name="row2_0" Grid.Row="1" Grid.Column="0" Background="Black">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="20"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="Back2" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Height="20" Margin="10,5,0,0" Click="ClickedToBack2" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Assets/Back.png"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+
+                    <Button x:Name="twoScreen2" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Height="21" Margin="90,5,0,0"  Click="ClickedTwoScreen2" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Assets/OneScreen.png"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+
+                    <Button x:Name="ReFresh2" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="26" Height="22" Margin="170,5,0,0"  Click="ClickedReFresh2" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Assets/ReFresh.png"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+
+                    <Button x:Name="HomePage2" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Height="24" Margin="250,5,0,0"  Click="ClickedToHomePage2" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Assets/HomePage.png"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+
+                    <TextBlock Grid.Row="1" Text="后退" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="10,3,0,0" Foreground="White"></TextBlock>
+                    <TextBlock Grid.Row="1" Text="单屏" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="90,3,0,0" Foreground="White"></TextBlock>
+                    <TextBlock Grid.Row="1" Text="刷新" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="170,3,0,0" Foreground="White"></TextBlock>
+                    <TextBlock Grid.Row="1" Text="首页" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="250,3,0,0" Foreground="White"></TextBlock>
+
+                </Grid>
+            </Grid>
+
+            <Grid x:Name="row2_1" Grid.Row="1" Grid.Column="1" Background="Black">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="20"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="Back3" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Height="20" Margin="10,5,0,0" Click="ClickedToBack3" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Assets/Back.png"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+
+                    <Button x:Name="twoScreen3" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="24" Height="20" Margin="90,5,0,0"  Click="ClickedTwoScreen3" Style="{StaticResource DateTimePickerFlyoutButtonStyle}">
+                        <Button.Background>
+                            <ImageBrush ImageSource="Assets/SynchroScreen.png"></ImageBrush>
+                        </Button.Background>
+                    </Button>
+
+
+                    <TextBlock Grid.Row="1" Text="后退" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="10,5,0,0" Foreground="White"></TextBlock>
+                    <TextBlock Grid.Row="1" Text="双屏同步" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="宋体" FontSize="13" Margin="75,5,0,0" Foreground="White"></TextBlock>
+
+
+                </Grid>
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>

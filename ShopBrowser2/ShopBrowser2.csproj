@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{EFF1D939-B4AA-426C-8775-4D3D350E4FF5}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShopBrowser2</RootNamespace>
+    <AssemblyName>ShopBrowser2</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>ShopBrowser2_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConstClass.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="ShopBrowser2_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\1.png" />
+    <Content Include="Assets\10.png" />
+    <Content Include="Assets\10_1.png" />
+    <Content Include="Assets\11.png" />
+    <Content Include="Assets\11_1.png" />
+    <Content Include="Assets\12.png" />
+    <Content Include="Assets\12_1.png" />
+    <Content Include="Assets\13.png" />
+    <Content Include="Assets\13_1.png" />
+    <Content Include="Assets\14.png" />
+    <Content Include="Assets\14_1.png" />
+    <Content Include="Assets\15.png" />
+    <Content Include="Assets\15_1.png" />
+    <Content Include="Assets\16.png" />
+    <Content Include="Assets\16_1.png" />
+    <Content Include="Assets\17.png" />
+    <Content Include="Assets\17_1.png" />
+    <Content Include="Assets\18.png" />
+    <Content Include="Assets\18_1.png" />
+    <Content Include="Assets\19.png" />
+    <Content Include="Assets\19_1.png" />
+    <Content Include="Assets\1_1.png" />
+    <Content Include="Assets\2.png" />
+    <Content Include="Assets\20.png" />
+    <Content Include="Assets\20_1.png" />
+    <Content Include="Assets\21.png" />
+    <Content Include="Assets\21_1.png" />
+    <Content Include="Assets\22.png" />
+    <Content Include="Assets\22_1.png" />
+    <Content Include="Assets\23.png" />
+    <Content Include="Assets\23_1.png" />
+    <Content Include="Assets\24.png" />
+    <Content Include="Assets\24_1.png" />
+    <Content Include="Assets\25.png" />
+    <Content Include="Assets\25_1.png" />
+    <Content Include="Assets\26.png" />
+    <Content Include="Assets\26_1.png" />
+    <Content Include="Assets\27.png" />
+    <Content Include="Assets\27_1.png" />
+    <Content Include="Assets\28.png" />
+    <Content Include="Assets\28_1.png" />
+    <Content Include="Assets\29.png" />
+    <Content Include="Assets\29_1.png" />
+    <Content Include="Assets\2_1.png" />
+    <Content Include="Assets\3.png" />
+    <Content Include="Assets\30.png" />
+    <Content Include="Assets\30_1.png" />
+    <Content Include="Assets\31.png" />
+    <Content Include="Assets\31_1.png" />
+    <Content Include="Assets\32.png" />
+    <Content Include="Assets\32_1.png" />
+    <Content Include="Assets\33.png" />
+    <Content Include="Assets\33_1.png" />
+    <Content Include="Assets\34.png" />
+    <Content Include="Assets\34_1.png" />
+    <Content Include="Assets\35.png" />
+    <Content Include="Assets\35_1.png" />
+    <Content Include="Assets\36.png" />
+    <Content Include="Assets\36_1.png" />
+    <Content Include="Assets\3_1.png" />
+    <Content Include="Assets\4.png" />
+    <Content Include="Assets\4_1.png" />
+    <Content Include="Assets\5.png" />
+    <Content Include="Assets\5_1.png" />
+    <Content Include="Assets\6.png" />
+    <Content Include="Assets\6_1.png" />
+    <Content Include="Assets\7.png" />
+    <Content Include="Assets\7_1.png" />
+    <Content Include="Assets\8.png" />
+    <Content Include="Assets\8_1.png" />
+    <Content Include="Assets\9.png" />
+    <Content Include="Assets\9_1.png" />
+    <Content Include="Assets\Back.png" />
+    <Content Include="Assets\DoubleScreen.png" />
+    <Content Include="Assets\HAITAO1.png" />
+    <Content Include="Assets\HAITAO10.png" />
+    <Content Include="Assets\HAITAO10_1.png" />
+    <Content Include="Assets\HAITAO11.png" />
+    <Content Include="Assets\HAITAO11_1.png" />
+    <Content Include="Assets\HAITAO12.png" />
+    <Content Include="Assets\HAITAO12_1.png" />
+    <Content Include="Assets\HAITAO1_1.png" />
+    <Content Include="Assets\HAITAO2.png" />
+    <Content Include="Assets\HAITAO2_1.png" />
+    <Content Include="Assets\HAITAO3.png" />
+    <Content Include="Assets\HAITAO3_1.png" />
+    <Content Include="Assets\HAITAO4.png" />
+    <Content Include="Assets\HAITAO4_1.png" />
+    <Content Include="Assets\HAITAO5.png" />
+    <Content Include="Assets\HAITAO5_1.png" />
+    <Content Include="Assets\HAITAO6.png" />
+    <Content Include="Assets\HAITAO6_1.png" />
+    <Content Include="Assets\HAITAO7.png" />
+    <Content Include="Assets\HAITAO7_1.png" />
+    <Content Include="Assets\HAITAO8.png" />
+    <Content Include="Assets\HAITAO8_1.png" />
+    <Content Include="Assets\HAITAO9.png" />
+    <Content Include="Assets\HAITAO9_1.png" />
+    <Content Include="Assets\HomePage.png" />
+    <Content Include="Assets\Hot1.png" />
+    <Content Include="Assets\Hot10.png" />
+    <Content Include="Assets\Hot10_1.png" />
+    <Content Include="Assets\Hot11.png" />
+    <Content Include="Assets\Hot11_1.png" />
+    <Content Include="Assets\Hot12.png" />
+    <Content Include="Assets\Hot12_1.png" />
+    <Content Include="Assets\Hot1_1.png" />
+    <Content Include="Assets\Hot2.png" />
+    <Content Include="Assets\Hot2_1.png" />
+    <Content Include="Assets\Hot3.png" />
+    <Content Include="Assets\Hot3_1.png" />
+    <Content Include="Assets\Hot4.png" />
+    <Content Include="Assets\Hot4_1.png" />
+    <Content Include="Assets\Hot5.png" />
+    <Content Include="Assets\Hot5_1.png" />
+    <Content Include="Assets\Hot6.png" />
+    <Content Include="Assets\Hot6_1.png" />
+    <Content Include="Assets\Hot7.png" />
+    <Content Include="Assets\Hot7_1.png" />
+    <Content Include="Assets\Hot8.png" />
+    <Content Include="Assets\Hot8_1.png" />
+    <Content Include="Assets\Hot9.png" />
+    <Content Include="Assets\Hot9_1.png" />
+    <Content Include="Assets\HotTitle_bg.png" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\MainPage_bg.png" />
+    <Content Include="Assets\one.png" />
+    <Content Include="Assets\OneScreen.png" />
+    <Content Include="Assets\ReFresh.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square310x310Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\SynchroScreen.png" />
+    <Content Include="Assets\Theme1.png" />
+    <Content Include="Assets\Theme2.png" />
+    <Content Include="Assets\Theme3.png" />
+    <Content Include="Assets\Theme4.png" />
+    <Content Include="Assets\Theme5.png" />
+    <Content Include="Assets\Theme6.png" />
+    <Content Include="Assets\three.png" />
+    <Content Include="Assets\two.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\YOUHUIQUAN1.png" />
+    <Content Include="Assets\YOUHUIQUAN10.png" />
+    <Content Include="Assets\YOUHUIQUAN10_1.png" />
+    <Content Include="Assets\YOUHUIQUAN11.png" />
+    <Content Include="Assets\YOUHUIQUAN11_1.png" />
+    <Content Include="Assets\YOUHUIQUAN12.png" />
+    <Content Include="Assets\YOUHUIQUAN12_1.png" />
+    <Content Include="Assets\YOUHUIQUAN1_1.png" />
+    <Content Include="Assets\YOUHUIQUAN2.png" />
+    <Content Include="Assets\YOUHUIQUAN2_1.png" />
+    <Content Include="Assets\YOUHUIQUAN3.png" />
+    <Content Include="Assets\YOUHUIQUAN3_1.png" />
+    <Content Include="Assets\YOUHUIQUAN4.png" />
+    <Content Include="Assets\YOUHUIQUAN4_1.png" />
+    <Content Include="Assets\YOUHUIQUAN5.png" />
+    <Content Include="Assets\YOUHUIQUAN5_1.png" />
+    <Content Include="Assets\YOUHUIQUAN6.png" />
+    <Content Include="Assets\YOUHUIQUAN6_1.png" />
+    <Content Include="Assets\YOUHUIQUAN7.png" />
+    <Content Include="Assets\YOUHUIQUAN7_1.png" />
+    <Content Include="Assets\YOUHUIQUAN8.png" />
+    <Content Include="Assets\YOUHUIQUAN8_1.png" />
+    <Content Include="Assets\YOUHUIQUAN9.png" />
+    <Content Include="Assets\YOUHUIQUAN9_1.png" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
